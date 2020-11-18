@@ -1,0 +1,145 @@
+/*Css entrega Le Wagon*/
+body {
+	margin: 0 0 0 0;
+}
+
+
+/* Banner */
+
+
+.banner-wrap {
+	box-sizing: border-box;
+	text-align: center;
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/ieic5Tq8YMk/1600x900');
+	height: 60vh;
+	padding: 15vh 0;
+
+
+}
+.banner-wrap h1 {
+	color: white;
+	margin: 0 auto;
+	font-family: 'Roboto Mono', monospace;;
+	font-size: 3em;
+}
+
+.banner-wrap p {
+	font-size: 1em;
+	margin: 0 auto;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	margin-top: 1vh;
+	font-weight: 24px;
+	opacity: 0.7;
+
+}
+
+.banner-wrap button {
+	margin-top: 5vh;
+	font-family: 'Roboto', sans-serif;
+	height: 5vh;
+	width: 10vw;
+	background-color: #1c2ac7;
+	border: 0;
+	color: white;
+}
+
+/* Cards */
+
+
+
+.cards-wrap {
+	height: 70vh;
+	padding: 7vh 7vh;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.cards-wrap p {
+
+	font-family: 'Roboto Mono', monospace
+}
+.cards-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin : 0 10vw ;
+	
+	height: 60vh;
+	
+
+}
+
+.card {
+	padding: 2vh;
+	box-shadow:  0 0 16px rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+
+
+}
+
+
+
+.card image { 
+	height: 5vh;
+	width: 2.5vw;
+	margin: 0 auto;
+
+}
+
+.cards-container a {
+	text-decoration: none;
+	color: black;
+}
+
+
+
+
+/*  FOOTER  */
+
+footer {
+	padding: 0.2vh 0 2vw 2vw;
+	background-color: #4a4a4a;
+	height: 3vh;
+
+}
+footer h4 {
+	color: white;
+	margin: 2vh 0 0 0;
+}
+
+footer a {
+	text-decoration: none;
+	color: white;
+}
+
+
+/* Si se achica la pantalla --> */
+@media screen and (max-width: 800px) {
+	.cards-container{
+		flex-direction: column;
+		height: 200vh;
+		
+	}
+
+	.card {
+		margin-top: 2vh;
+	}
+
+	.cards-wrap {
+		height: 80%;
+	}
+
+	.banner-wrap h1 {
+		font-size: 2em;
+	}
+
+	.banner-wrap button{
+		width: 20vw;
+	}
+
+	.banner-wrap p{
+		font-size: 0.8em;
+	}
+}
